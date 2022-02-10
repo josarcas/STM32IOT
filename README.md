@@ -6,3 +6,5 @@ Uso de la plataforma B-L475E-IOT01A desarrollada por STM32, para el desarrollo d
 con internet a traves del modulo ism43362-m3g-l44, la librería "wifi_driver" contiene funciones para conexion a un modem wifi, a un broker MQTT, a servidores SMTP, POP, SNTP, y spi
 para obtener el tiempo (http get). La interfaz grafica esta a cargo de una pantalla TFT 2.4 inch, tambien contiene comunicacion via SPI con una tarjeta SD para guardar y recuperar
 datos.
+
+![image](https://user-images.githubusercontent.com/52707509/153318496-d7be5f19-b12f-40ee-8472-0921e624b501.png)
