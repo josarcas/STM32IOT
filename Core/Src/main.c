@@ -69,8 +69,8 @@ UART_HandleTypeDef huart1;
 
 osThreadId defaultTaskHandle;
 /* USER CODE BEGIN PV */
-const char SSID[]= "ae38ac";
-const char PASSWORD[] = "273665629";
+const char SSID[]= "ssid";
+const char PASSWORD[] = "pass";
 
 const char *main_menu[]={
 		"Almacenamiento",
@@ -1073,16 +1073,6 @@ void check_wifi_connection_task(void *arg)
 		vTaskDelay(100);
 	}
 
-	//char message[10];
-	//connect_pop("pop.gmail.com", "995", HAL_MAX_DELAY);
-	//open_pop("esp32user@gmail.com", "#include<jossarr.h>", HAL_MAX_DELAY);
-	//read_email_pop(17, &mail, HAL_MAX_DELAY);
-	//HAL_UART_Transmit(&huart1, wifi.buffer_rx, strlen(wifi.buffer_rx), HAL_MAX_DELAY);
-
-	connect_smtp("smtp.gmail.com", "465", 1000);
-	open_smtp("esp32user@gmail.com", "#include<jossarr.h>", HAL_MAX_DELAY);
-	send_email_smtp("esp32user@gmail.com", "thijoseph@hotmail.com", "jueves 23 de diciembre",
-			"Prospero anio y felicidad!!!", HAL_MAX_DELAY);
 	close_smtp(1000);
 
 	connect_sntp("pool.ntp.org", "123", HAL_MAX_DELAY);
