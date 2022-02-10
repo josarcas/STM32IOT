@@ -1,0 +1,3 @@
+sd_device.c:12:9:init_sd	4176	static
+sd_device.c:21:5:scan_directory	376	static
+sd_device.c:104:6:delete_file_list	24	static
